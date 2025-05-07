@@ -17,9 +17,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <J L U Y M N E I O K H>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -28,10 +30,12 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <Q W F P B A R S T G Z X C D V>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
     };
+
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -39,14 +43,14 @@
 
         default_layer {
             bindings = <
-&kp GRAVE      &kp F1  &kp F2                &kp N3                 &kp F4       &kp F5                                   &kp F6         &kp F7       &kp F8            &kp F9             &kp F10        &kp F11
-&kp TAB        &kp Q   &kp W                 &kp F                  &kp P        &kp B                                    &kp J          &kp L        &kp U             &kp Y              &kp SEMICOLON  &kp MINUS
-&kp ESCAPE     &kp A   &mt LEFT_ALT R        &mt LEFT_SHIFT S       &mt LCTRL T  &kp G                                    &kp H          &mt LCTRL N  &mt LEFT_SHIFT E  &mt LALT I         &kp O          &kp SQT
-&kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D        &kp V                                    &kp K          &kp H        &kp COMMA         &kp DOT            &kp SLASH      &kp DOUBLE_QUOTES
-                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                    &mo 2        &kp SPACE                                &kp BACKSPACE  &lt 1 ENTER
-                                                                                 &kp LGUI   &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
-                                                                                 &none      &trans               &trans   &trans
+&kp GRAVE      &kp F1  &kp F2                &kp N3                 &kp F4        &kp F5                                   &kp F6         &kp F7        &kp F8             &kp F9             &kp F10        &kp F11
+&kp TAB        &kp Q   &kp W                 &kp F                  &kp P         &kp B                                    &kp J          &kp L         &kp U              &kp Y              &kp SEMICOLON  &kp MINUS
+&kp ESCAPE     &kp A   &hml LEFT_ALT R       &hml LEFT_SHIFT S      &hml LCTRL T  &kp G                                    &kp H          &hmr LCTRL N  &hmr LEFT_SHIFT E  &hmr LALT I        &kp O          &kp SQT
+&kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D         &kp V                                    &kp K          &kp H         &kp COMMA          &kp DOT            &kp SLASH      &kp DOUBLE_QUOTES
+                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+                                                                    &mo 2         &kp SPACE                                &kp BACKSPACE  &lt 1 ENTER
+                                                                                  &kp LGUI   &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
+                                                                                  &none      &trans               &trans   &trans
             >;
         };
 
