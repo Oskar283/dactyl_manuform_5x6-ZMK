@@ -52,12 +52,12 @@
 
         default_layer {
             bindings = <
-&kp GRAVE      &kp F1  &kp F2                &kp N3                 &kp F4       &kp F5                                   &kp F6    &kp F7       &kp F8            &kp F9             &kp F10        &kp F11
-&kp TAB        &kp Q   &kp W                 &kp F                  &kp P        &kp B                                    &kp J     &kp L        &kp U             &kp Y              &kp SEMICOLON  &kp MINUS
-&kp ESCAPE     &kp A   &mt LEFT_ALT R        &mt LEFT_SHIFT S       &mt LCTRL T  &kp G                                    &kp H     &mt LCTRL N  &mt LEFT_SHIFT E  &mt LALT I         &kp O          &kp SQT
-&kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D        &kp V                                    &kp K     &kp H        &kp COMMA         &kp DOT            &kp SLASH      &kp DOUBLE_QUOTES
-                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                                                    &mo 2        &kp SPACE                                &kp RET   &lt 1 ENTER
+&kp GRAVE      &kp F1  &kp F2                &kp N3                 &kp F4       &kp F5                                   &kp F6         &kp F7       &kp F8            &kp F9             &kp F10        &kp F11
+&kp TAB        &kp Q   &kp W                 &kp F                  &kp P        &kp B                                    &kp J          &kp L        &kp U             &kp Y              &kp SEMICOLON  &kp MINUS
+&kp ESCAPE     &kp A   &mt LEFT_ALT R        &mt LEFT_SHIFT S       &mt LCTRL T  &kp G                                    &kp H          &mt LCTRL N  &mt LEFT_SHIFT E  &mt LALT I         &kp O          &kp SQT
+&kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D        &kp V                                    &kp K          &kp H        &kp COMMA         &kp DOT            &kp SLASH      &kp DOUBLE_QUOTES
+                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                    &mo 2        &kp SPACE                                &kp BACKSPACE  &lt 1 ENTER
                                                                                  &kp LGUI   &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
                                                                                  &none      &trans               &trans   &trans
             >;
@@ -78,14 +78,14 @@
 
         NAV {
             bindings = <
-&bootloader  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE                  &trans    &trans    &trans    &trans  &trans     &trans
-&trans       &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE                  &trans    &trans    &trans    &trans  &kp SPACE  &kp SPACE
-&trans       &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp E                      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
-&trans       &trans     &trans     &trans     &trans     &trans                     &trans    &trans    &trans    &trans  &kp SPACE  &kp SPACE
-                        &trans     &trans                                                               &trans    &trans
-                                              &trans     &trans                     &trans    &trans
-                                                         &trans     &trans  &trans  &trans
-                                                         &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans  &kp SPACE  &kp SPACE
+&trans  &trans  &trans  &trans  &trans  &kp E                   &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans  &kp SPACE  &kp SPACE
+                &trans  &trans                                                      &trans    &trans
+                                &trans  &trans                  &trans    &trans
+                                        &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans  &trans
             >;
         };
 
