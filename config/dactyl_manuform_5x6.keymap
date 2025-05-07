@@ -9,42 +9,29 @@
 
 / {
     behaviors {
-        F2_F5: F2_F5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "F2_F5";
-            #binding-cells = <0>;
-            bindings = <&kp F2>, <&kp F5>;
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <J L U Y M N E I O K H>; // List of keys on the right side of the keyboard
+            hold-trigger-on-release;
         };
-
-        Bracket: Bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BRACKET";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp RBKT>;
-        };
-
-        DMP: DMP {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DMP";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp C_MUTE>, <&kp C_PREVIOUS>;
-        };
-
-        UPN: UPN {
-            compatible = "zmk,behavior-tap-dance";
-            label = "UPN";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_PLAY_PAUSE>, <&kp C_NEXT>;
-        };
-
-        BSLH_GRV: BSLH_GRV {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BSLH_GRV";
-            #binding-cells = <0>;
-            bindings = <&kp BSLH>, <&kp GRAVE>;
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <Q W F P B A R S T G Z X C D V>; // List of keys on the left side of the keyboard
+            hold-trigger-on-release;
         };
     };
-
     combos { compatible = "zmk,combos"; };
 
     keymap {
