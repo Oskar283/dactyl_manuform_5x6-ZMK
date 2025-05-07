@@ -43,22 +43,26 @@
             wait-ms = <10>;
             tap-ms = <20>;
             bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp TAB &to ALTAB>;
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp TAB &to 0>;
         };
+
         altab_x: alt_tab_leave {
             label = "alt_tab_leave";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <20>;
-            bindings =
-                <&macro_release &kp LCTRL>,
-                <&macro_tap &to 0>;
+            bindings = <&macro_release>, <&kp LCTRL>, <&macro_tap>, <&to 0>;
         };
     };
 
     combos { compatible = "zmk,combos"; };
+
+    macros {
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -71,8 +75,8 @@
 &kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D         &kp V                                    &kp K          &kp H         &kp COMMA          &kp DOT            &kp SLASH      &kp DOUBLE_QUOTES
                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET   &kp RIGHT_BRACKET
                                                                     &mo 2         &kp SPACE                                &kp BACKSPACE  &lt 1 ENTER
-                                                                                  &kp LGUI   &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
-                                                                                  &none      &trans               &trans   &trans
+                                                                                  &altab     &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
+                                                                                  &trans     &trans               &trans   &trans
             >;
         };
 
@@ -117,18 +121,14 @@
 
         altab_layer {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-          &altab_x   &kp TAB    &altab_x   &altab_x   &altab_x       &altab_x   &altab_x   &altab_x   &altab_x   &altab_x
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-          &altab_x   &altab_x   &altab_x   &altab_x   &altab_x       &altab_x   &altab_x   &altab_x   &altab_x   &altab_x
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-          &altab_x   &altab_x   &altab_x   &altab_x   &altab_x       &altab_x   &altab_x   &altab_x   &altab_x   &altab_x
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &altab_x   &altab_x       &altab_x   &altab_x
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+&altab_x  &trans  &trans  &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&altab_x  &trans  &trans  &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&altab_x  &trans  &trans  &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&altab_x  &trans  &trans  &trans  &trans    &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans                                                        &trans  &trans
+                                  &altab_x  &altab_x                    &trans  &trans
+                                            &kp TAB   &altab_x  &trans  &trans
+                                            &altab_x  &altab_x  &trans  &trans
             >;
         };
     };
