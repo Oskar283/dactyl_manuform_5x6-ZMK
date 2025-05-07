@@ -52,14 +52,14 @@
 
         default_layer {
             bindings = <
-&lt 2 ESC  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                                             &kp N6     &kp N7         &kp N8     &kp N9     &kp N0     &kp DEL
-&kp TAB    &kp Q   &kp W   &kp E   &kp R      &kp T                                              &kp Y      &kp U          &kp I      &kp O      &kp P      &kp MINUS
-&kp LSHFT  &kp A   &kp S   &kp D   &kp F      &kp G                                              &kp H      &kp J          &kp K      &kp L      &kp SEMI   &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C   &kp V      &kp B                                              &kp N      &kp M          &kp COMMA  &kp DOT    &kp SLASH  &BSLH_GRV
-                   &DMP    &UPN                                                                                            &Bracket   &kp EQUAL
-                                   &kp SPACE  &kp LEFT_SHIFT                                     &kp RET    &kp BACKSPACE
-                                              &kp LEFT_ALT    &kp C_AL_CALCULATOR  &kp UP_ARROW  &kp DOWN
-                                              &kp LEFT_GUI    &F2_F5               &kp LEFT      &kp RIGHT
+&kp GRAVE      &kp F1  &kp F2                &kp N3                 &kp F4       &kp F5                                             &kp F6     &kp F7         &kp F8            &kp F9             &kp F10        &kp F11
+&kp TAB        &kp Q   &kp W                 &kp F                  &kp P        &kp B                                              &kp J      &kp L          &kp U             &kp Y              &kp SEMICOLON  &kp MINUS
+&kp ESCAPE     &kp A   &mt LEFT_ALT R        &mt LEFT_SHIFT S       &mt LCTRL T  &kp G                                              &kp H      &mt LCTRL N    &mt LEFT_SHIFT E  &mt LALT I         &kp O          &kp SQT
+&kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D        &kp V                                              &kp K      &kp H          &kp COMMA         &kp DOT            &kp SLASH      &kp DOUBLE_QUOTES
+                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                            &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                                                    &kp SPACE    &kp LEFT_SHIFT                                     &kp RET    &kp BACKSPACE
+                                                                                 &kp LEFT_ALT    &kp C_AL_CALCULATOR  &kp UP_ARROW  &kp DOWN
+                                                                                 &kp LEFT_GUI    &F2_F5               &kp LEFT      &kp RIGHT
             >;
         };
 
@@ -86,6 +86,19 @@
                                                            &trans         &trans                         &trans  &trans
                                                                           &trans         &trans  &trans  &trans
                                                                           &trans         &trans  &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans                                                  &trans  &trans
+                                &trans  &trans                  &trans  &trans
+                                        &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans  &trans
             >;
         };
     };
