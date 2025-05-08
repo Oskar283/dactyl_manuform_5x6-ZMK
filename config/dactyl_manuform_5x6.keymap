@@ -21,6 +21,8 @@
 
             hold-trigger-key-positions = <J L U Y M N E I O K H>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
+            hold-while-undecided;
+            hold-while-undecided-linger;
         };
 
         hmr: home_row_mod_right {
@@ -34,6 +36,8 @@
 
             hold-trigger-key-positions = <Q W F P B A R S T G Z X C D V>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
+            hold-while-undecided;
+            hold-while-undecided-linger;
         };
 
         altab: alt_tab_enter {
