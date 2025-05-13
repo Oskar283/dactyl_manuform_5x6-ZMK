@@ -93,7 +93,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_backspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <31 54>;
+        };
+    };
 
     macros {
     };
