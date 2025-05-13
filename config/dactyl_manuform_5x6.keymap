@@ -103,7 +103,7 @@
 &kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D         &kp V                                    &kp K          &kp H         &kp COMMA          &kp DOT            &kp LS(N7)     &kp LS(N2)
                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                                                      &kp LEFT_BRACKET   &kp RIGHT_BRACKET
                                                                     &mo 2         &kp SPACE                                &kp BACKSPACE  &lt 1 ENTER
-                                                                                  &trans     &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
+                                                                                  &altab     &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
                                                                                   &trans     &trans               &trans   &trans
             >;
         };
