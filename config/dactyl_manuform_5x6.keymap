@@ -19,7 +19,7 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <0>;
             tapping-term-ms = <280>;
             quick-tap-ms = <100>;
@@ -32,13 +32,13 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <0>;
             tapping-term-ms = <280>;
             quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <26 27 28>; // List of keys on the left side of the keyboard
+            hold-trigger-key-positions = <26 27 28 25>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
 
