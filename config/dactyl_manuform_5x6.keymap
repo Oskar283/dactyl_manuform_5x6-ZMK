@@ -19,10 +19,10 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            require-prior-idle-ms = <125>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <1000>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <31 32 33>; // List of keys on the right side of the keyboard
@@ -33,9 +33,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            require-prior-idle-ms = <125>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            require-prior-idle-ms = <1000>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <26 27 28 25>; // List of keys on the left side of the keyboard
