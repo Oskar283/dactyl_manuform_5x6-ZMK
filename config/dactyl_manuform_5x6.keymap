@@ -78,6 +78,13 @@
             bindings = <&kp EQUAL &kp E>;
             label = "SE_E_ACUTE";
         };
+
+        SE_BACKTICK: SE_BACKTICK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(EQUAL) &kp SPACE>;
+            label = "SE_BACKTICK";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -90,7 +97,7 @@
 
         default_layer {
             bindings = <
-&kp GRAVE      &kp F1  &kp F2                &kp N3                 &kp F4        &kp F5                                   &kp F6         &kp F7        &kp F8             &kp F9             &kp F10        &kp F11
+&SE_BACKTICK   &kp F1  &kp F2                &kp F3                 &kp F4        &kp F5                                   &kp F6         &kp F7        &kp F8             &kp F9             &kp F10        &kp F11
 &kp TAB        &kp Q   &kp W                 &kp F                  &kp P         &kp B                                    &kp J          &kp L         &kp U              &kp Y              &kp SEMICOLON  &kp SLASH
 &kp ESCAPE     &kp A   &hml LEFT_ALT R       &hml LEFT_SHIFT S      &hml LCTRL T  &kp G                                    &kp M          &hmr LCTRL N  &hmr LEFT_SHIFT E  &hmr LALT I        &kp O          &kp BACKSLASH
 &kp BACKSLASH  &kp Z   &kp X                 &kp C                  &kp D         &kp V                                    &kp K          &kp H         &kp COMMA          &kp DOT            &kp LS(N7)     &kp LS(N2)
