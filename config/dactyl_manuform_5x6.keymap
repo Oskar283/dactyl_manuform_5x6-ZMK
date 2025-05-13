@@ -106,7 +106,7 @@
 &SE_BACKTICK   &kp F1  &kp F2           &kp F3             &kp F4        &kp F5                                   &kp F6         &kp F7        &kp F8             &kp F9             &kp F10        &kp F11
 &kp TAB        &kp Q   &kp W            &kp F              &kp P         &kp B                                    &kp J          &kp L         &kp U              &kp Y              &kp SEMICOLON  &kp SLASH
 &kp ESCAPE     &kp A   &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G                                    &kp M          &hmr LCTRL N  &hmr LEFT_SHIFT E  &hmr LALT I        &kp O          &kp BACKSLASH
-&kp BACKSLASH  &kp Z   &kp X            &kp C              &kp D         &kp V                                    &kp K          &kp H         &kp COMMA          &kp DOT            &kp LS(N7)     &kp LS(N2)
+&kp RA(MINUS)  &kp Z   &kp X            &kp C              &kp D         &kp V                                    &kp K          &kp H         &kp COMMA          &kp DOT            &kp LS(N7)     &kp LS(N2)
                        &kp LS(N8)       &kp LS(N9)                                                                                             &kp LEFT_BRACKET   &kp RIGHT_BRACKET
                                                            &mo 2         &kp SPACE                                &kp BACKSPACE  &lt 1 ENTER
                                                                          &altab     &kp C_AL_CALCULATOR  &kp DEL  &kp LGUI
@@ -119,7 +119,7 @@
 &trans               &trans      &trans           &trans               &trans      &trans                       &trans     &trans      &trans                &trans               &trans         &trans
 &trans               &kp N1      &kp N2           &kp N3               &kp N4      &kp N5                       &kp N6     &kp N7      &kp N8                &kp N9               &kp N0         &kp LEFT_BRACKET
 &SE_TILDE            &kp LS(N1)  &kp RA(N2)       &kp LS(N3)           &kp RA(N4)  &kp LS(N5)                   &SE_CARET  &kp LS(N6)  &kp LS(BACKSLASH)     &kp LS(N0)           &kp SEMICOLON  &kp SQT
-&kp RA(NON_US_BSLH)  &trans      &trans           &trans               &trans      &trans                       &trans     &trans      &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp MINUS      &kp EQUAL
+&kp RA(NON_US_BSLH)  &trans      &trans           &trans               &trans      &trans                       &trans     &trans      &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp LS(MINUS)  &kp MINUS
                                  &kp NON_US_BSLH  &kp LS(NON_US_BSLH)                                                                  &kp RA(N7)            &kp RA(N0)
                                                                        &trans      &trans                       &trans     &trans
                                                                                    &trans      &trans  &trans   &trans
