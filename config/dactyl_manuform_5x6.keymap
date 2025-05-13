@@ -129,14 +129,14 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &SE_E_ACUTE                  &kp HOME  &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp END
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                &trans  &trans                                                                 &trans          &trans
-                                &trans  &trans                       &trans    &trans
-                                        &trans       &trans  &trans  &trans
-                                        &mo 3        &mo 3   &trans  &trans
+&trans  &trans  &trans         &trans         &trans  &trans                       &trans    &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &kp LC(LS(C))  &kp LC(LS(V))  &trans  &trans                       &trans    &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &kp LC(INS)    &kp LS(INS)    &trans  &SE_E_ACUTE                  &kp HOME  &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp END
+&trans  &trans  &kp LC(C)      &kp LC(V)      &trans  &trans                       &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                &trans         &trans                                                                        &trans          &trans
+                                              &trans  &trans                       &trans    &trans
+                                                      &trans       &trans  &trans  &trans
+                                                      &mo 3        &mo 3   &trans  &trans
             >;
         };
 
