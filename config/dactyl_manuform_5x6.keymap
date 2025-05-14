@@ -19,27 +19,29 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            require-prior-idle-ms = <300>;
-            tapping-term-ms = <500>;
+            flavor = "balanced";
+            require-prior-idle-ms = <50>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <50>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <31 32 33 26 27 28>; // List of keys on the right side of the keyboard
+            hold-trigger-key-positions = <31 32 33 34>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            require-prior-idle-ms = <300>;
-            tapping-term-ms = <500>;
+            flavor = "balanced";
+            require-prior-idle-ms = <50>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <50>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <26 27 28 25 31 32 33>; // List of keys on the left side of the keyboard
+            hold-trigger-key-positions = <26 27 28 25>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         altab: alt_tab_enter {
